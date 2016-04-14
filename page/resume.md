@@ -1,8 +1,12 @@
 ---
 layout: blog
-title: About
+title: Resume
 ---
 
-Lingxiao Ma (xysmlx)
+# Lingxiao Ma
+
+xysmlx
+
+---
 
 EMail: xysmlx@gmail.com

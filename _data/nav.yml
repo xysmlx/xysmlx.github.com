@@ -1,4 +1,4 @@
-- href: /page/timing.html
+- href: /page/timeline.html
   icon: fa fa-clock-o
   title: Timeline
 
@@ -10,6 +10,6 @@
   icon:  fa fa-book
   title: Read
 
-- href: /page/about.html
+- href: /page/resume.html
   icon: fa fa-paper-plane-o
   title: Resume

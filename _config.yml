@@ -15,7 +15,7 @@ blog:
     qiniu:                                               # 七牛云地址
 author:
     name: Lingxiao Ma                                               # 作者名称
-    email: xysmlx@gmail.com                                              # 邮箱地址
+    email: mailto:xysmlx@gmail.com                                              # 邮箱地址
     weibo: http://weibo.com/xysmlx                                              # 微博地址
     bitbucket: https://bitbucket.org/xysmlx
     github: https://github.com/xysmlx                                             # GitHub地址
