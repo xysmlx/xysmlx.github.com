@@ -1,6 +1,8 @@
 ---
 layout: blog
-title: 关于
+title: About
 ---
 
-我能吞下玻璃而不伤身体  
+Lingxiao Ma (xysmlx)
+
+EMail: xysmlx@gmail.com
