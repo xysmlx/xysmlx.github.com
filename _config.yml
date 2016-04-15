@@ -1,15 +1,16 @@
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 permalink: blog/:year/:month/:day/:title.html
 paginate: 6
 paginate_path: page/:num
 gems: [jekyll-paginate]
+port: 7999
 
 blog:
     name: Lingxiao Ma                                               # 博客名称
     description: Ph.D. Candidate in CS                                        # 博客描述
     title: Lingxiao Ma's Homepage                                              # 网页标题
-    url: http://blog.xysmlx.me                                                # 博客地址
+    url: http://www.xysmlx.me                                                # 博客地址
     duoshuo:                                             # 多说ID
     tongji:                                              # 百度统计ID
     qiniu:                                               # 七牛云地址
