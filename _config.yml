@@ -11,7 +11,7 @@ blog:
     description: Ph.D. Candidate in CS                                        # 博客描述
     title: Lingxiao Ma's Homepage                                              # 网页标题
     url: http://www.xysmlx.me                                                # 博客地址
-    duoshuo:                                             # 多说ID
+    duoshuo: xysmlx                                            # 多说ID
     tongji:                                              # 百度统计ID
     qiniu:                                               # 七牛云地址
 author:
@@ -19,6 +19,7 @@ author:
     email: mailto:xysmlx@gmail.com                                              # 邮箱地址
     weibo: http://weibo.com/xysmlx                                              # 微博地址
     bitbucket: https://bitbucket.org/xysmlx
+    linkedin: https://www.linkedin.com/in/xysmlx
     github: https://github.com/xysmlx                                             # GitHub地址
     logo: /res/img/logo.jpg                                               # logo地址
     douban:
