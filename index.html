@@ -41,10 +41,11 @@
                                             <p>Ph.D. Candidate @ Computer Architecture</p>
                                         </header>
                                         <p>I am Lingxiao Ma (马凌霄), a 4th year Ph.D. Candidate in <a href="http://net.pku.edu.cn/p2p/">Distributed Systems Group</a> of <a href="https://www.pku.edu.cn/">Peking University (PKU)</a>, under supervision of Prof. Yafei Dai. My research works are focused on building efficient parallel systems for large-scale data analytics scenarios, e.g., deep learning, machine learning, graph processing, through leveraging modern hardware like GPU.</p>
-                                        <!-- <p><b> I expect to graduate in 2020, so I am in the job market now. </b></p> -->
+                                        <!-- <p><b> I expect to graduate in 2020, so I am in the job market now. </b></p>
                                         <ul class="actions">
-                                            <li><a href="#education" class="button big">Learn More</a></li>
-                                        </ul>
+                                            <li><a href="#education" class="button big">Curriculum Vitae</a></li>
+                                            <li><a href="#education" class="button big">中文简历</a></li>
+                                        </ul> -->
                                     </div>
                                     <span class="image object">
                                         <img src="images/mlx_st.jpg" alt="" />
@@ -73,6 +74,7 @@
                                                         <li>Distributed Systems Group</li>
                                                         <li>Institute of Network Computing and Information Systems</li>
                                                         <li>School of Electronics Engneering and Computer Science</li>
+                                                        <!-- <li>Projects: Garaph</li> -->
                                                     </ul>
                                                 </td>
                                                 <td width="5%" valign="top" align="justify"></td>
@@ -118,7 +120,7 @@
                                                     <h3>Research Intern (Full-Time) @ Systems Research Group</h3>
                                                     <ul>
                                                         <li>Mentor: <a href="https://www.microsoft.com/en-us/research/people/jxue/">Dr. Jilong Xue</a>, Dr. Ming Wu</li>
-                                                        <li>Projects: <!-- NGra, SeerNet --></li>
+                                                        <li>Projects: NeuGraph (NGra), SeerNet</li>
                                                     </ul>
                                                 </td>
                                                 <td width="5%" valign="top" align="justify"></td>
@@ -149,33 +151,62 @@
                                     <header class="major">
                                         <h2>Research Experence</h2>
                                     </header>
-                                    <p>Building...</p>
+                                    <!-- <p>Building...</p> -->
                                     <div class="posts">
-                                        <!-- <article>
-                                            <a href="#" class="image"><img src="images/ngra.jpg" alt="" /></a>
-                                            <h3>NGra</h3>
-                                            <p>blabla</p>
+                                        <article>
+                                            <a class="image"><img src="images/neugraph.jpg" alt="" /></a>
+                                            <h3>NeuGraph (NGra): System for Graph Neural Networks (GNNs)</h3>
+                                            <p>Recent deep learning models have moved beyond low-dimensional regular grids to high-dimensional graph-structured data,
+                                            leading to large graph-based irregular and sparse models that go beyond what existing DL frameworks are
+                                            designed for. We introduce NGra, the first parallel processing framework for graph-based deep neural networks (GNNs) on top of existing DL frameworks.</p>
+                                            <ul>
+                                                <li>NGra presents a new programming model for expressing deep neural networks as vertex programs. This model not only allows
+                                                GNNs to be expressed intuitively, but also facilitates the mapping to an efficient dataflow representation.</li>
+                                                <li>NGra
+                                                addresses the scalability challenge transparently through automatic graph partitioning and chunk-based stream
+                                                processing out of GPU core or over multiple GPUs.</li>
+                                                <li>NGra achieves efficiency through highly optimized Scatter/Gather operations on GPU despite graph sparsity.</li>
+                                            </ul>
                                             <ul class="actions">
-                                                <li><a href="#" class="button">More</a></li>
+                                                <li><a href="https://arxiv.org/pdf/1810.08403.pdf" class="button">Paper</a></li>
+                                                <!-- <li><a href="#" class="button">Slides</a></li> -->
+                                                <li><a href="https://www.microsoft.com/china/events/video_176" class="button">Video&Demo</a></li>
                                             </ul>
                                         </article>
                                         <article>
-                                            <a href="#" class="image"><img src="images/garaph.jpg" alt="" /></a>
-                                            <h3>Garaph</h3>
-                                            <p>blabla</p>
-                                            <ul class="actions">
-                                                <li><a href="#" class="button">More</a></li>
+                                            <a class="image"><img src="images/garaph.jpg" alt="" /></a>
+                                            <h3>Garaph: <U>G</U>PU-<U>a</U>ccelerated G<U>raph</U> Processing System</h3>
+                                            <p>Recent advances in storage and accelerators provide the opportunity to efficiently process large-scale graphs on a single machine. Thus, we present Garaph, a GPU-accelerated graph processing system. Garaph is novel in three ways:</p>
+                                            <ul>
+                                                <li>First, Garaph proposes a vertex replication degree customization scheme that maximizes the GPU utilization given vertices’
+                                                degrees and space constraints.</li>
+                                                <li>Second, Garaph adopts a balanced edge-based partition method, ensuring sequential memory access and load balance over CPU threads, and also a hybrid of notify-pull and pull computation models optimized for fast graph processing on the CPU.</li>
+                                                <li>Third, Garaph designs a workload scheduler which takes into account both characteristics of processing elements and graph algorithms.</li>
                                             </ul>
-                                        </article> -->
-                                        <!-- <article>
-                                            <a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-                                            <h3>Tempus ullamcorper</h3>
-                                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
                                             <ul class="actions">
-                                                <li><a href="#" class="button">More</a></li>
+                                                <li><a href="https://www.usenix.org/system/files/conference/atc17/atc17-ma.pdf" class="button">Paper</a></li>
+                                                <li><a href="https://www.usenix.org/sites/default/files/conference/protected-files/atc17_slides_ma.pdf" class="button">Slides</a></li>
                                             </ul>
                                         </article>
-                                        <article>
+                                        <!--<article>
+                                            <a class="image"><img src="images/seernet.jpg" alt="" /></a>
+                                            <h3>SeerNet: Sparse Convolution through Low-Bit Quantization</h3>
+                                            <p>blabla</p>
+                                            <ul class="actions">
+                                                <li><a href="#" class="button">Paper</a></li>
+                                                <li><a href="#" class="button">Poster</a></li>
+                                            </ul>
+                                        </article>-->
+                                        <!--<article>
+                                            <a href="#" class="image"><img src="images/seernet.jpg" alt="" /></a>
+                                            <h3>SeerNet: Sparse Convolution through Low-Bit Quantization</h3>
+                                            <p>blabla</p>
+                                            <ul class="actions">
+                                                <li><a href="#" class="button">Paper</a></li>
+                                                <li><a href="#" class="button">Poster</a></li>
+                                            </ul>
+                                        </article>-->
+                                        <!-- <article>
                                             <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
                                             <h3>Sed etiam facilis</h3>
                                             <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
@@ -193,18 +224,23 @@
                                         <h2>Publications</h2>
                                     </header>
                                     <p align="left">
+                                        <li align="justify" type="square" line-height:1>
+                                            <b><font size="4"> NeuGraph: Parallel Deep Neural Network Computation on Large Graphs. &nbsp <!--<a href="https://arxiv.org/abs/1810.08403" class="icon fa-file-pdf-o"></a> &nbsp <a href="https://www.microsoft.com/china/events/video_176" class="icon fa-file-video-o"></a>--></font></b><br> 
+                                            &nbsp&nbsp&nbsp&nbsp <font size="3"><i><b>Lingxiao Ma</b>, Zhi Yang, Youshan Miao, Jilong Xue, Ming Wu, Lidong Zhou, Yafei Dai</i></font><br>
+                                            &nbsp&nbsp&nbsp&nbsp <font size="3"> Accepted by the 2019 USENIX Annual Technical Conference (<b>USENIX ATC'19</b>) </font>
+                                        </li>
                                         <li align="justify" type="square">
-                                            <b><font size="4">SeerNet: Predicting Convolutional Neural Network Feature-Map Sparsity through Low-Bit Quantization. &nbsp <a href="" class="icon fa-file-pdf-o"></font></b></a><br>
+                                            <b><font size="4">SeerNet: Predicting Convolutional Neural Network Feature-Map Sparsity through Low-Bit Quantization. <!-- &nbsp <a href="" class="icon fa-file-pdf-o"> --></font></b></a><br>
                                             &nbsp&nbsp&nbsp&nbsp <font size="3"><i>Shijie Cao, <b>Lingxiao Ma</b>, Wencong Xiao, Chen Zhang, Yunxin Liu, Lintao Zhang, Lanshun Nie, Zhi Yang</i></font><br>
                                             &nbsp&nbsp&nbsp&nbsp <font size="3"> Accepted by IEEE Computer Society Conference on Computer Vision and Pattern Recognition (<b>CVPR'19</b>) </font>
                                         </li>
-                                        <!-- <li align="justify" type="square" line-height:1>
+                                        <li align="justify" type="square" line-height:1>
                                             <b><font size="4"> Towards Efficient Large-Scale Graph Neural Network Computing. &nbsp <a href="https://arxiv.org/abs/1810.08403" class="icon fa-file-pdf-o"></a> &nbsp <a href="https://www.microsoft.com/china/events/video_176" class="icon fa-file-video-o"></a></font></b><br>
                                             &nbsp&nbsp&nbsp&nbsp <font size="3"><i><b>Lingxiao Ma</b>, Zhi Yang, Youshan Miao, Jilong Xue, Ming Wu, Lidong Zhou, Yafei Dai</i></font><br>
                                             &nbsp&nbsp&nbsp&nbsp <font size="3"> arXiv preprint arXiv:1810.08403 </font>
-                                        </li> -->
+                                        </li>
                                         <li align="justify" type="square">
-                                            <b><font size="4">Garaph: Efficient GPU-Accelerated Graph Processing on a Single Machine with Balanced Replication. &nbsp <a href="https://www.usenix.org/conference/atc17/technical-sessions/presentation/ma" class="icon fa-file-pdf-o"></font></b></a><br>
+                                            <b><font size="4">Garaph: Efficient GPU-accelerated Graph Processing on a Single Machine with Balanced Replication. &nbsp <a href="https://www.usenix.org/conference/atc17/technical-sessions/presentation/ma" class="icon fa-file-pdf-o"></font></b></a><br>
                                             &nbsp&nbsp&nbsp&nbsp <font size="3"><i><b>Lingxiao Ma</b>, Zhi Yang, Han Chen, Jilong Xue, Yafei Dai</i></font><br>
                                             &nbsp&nbsp&nbsp&nbsp <font size="3"> Proceedings of the 2017 USENIX Annual Technical Conference (<b>USENIX ATC'17</b>) </font>
                                         </li>
@@ -219,7 +255,7 @@
                                     </header>
                                     <p align="left">
                                         <li align="justify" type="square">
-                                            <b><font size="4"> Graph Processing Method Using Auto-Replication Model.</font></b><br>
+                                            <b><font size="4"> Graph Processing Method Using Auto-Replication Model. &nbsp <a href="http://www2.soopat.com/Patent/201710533444" class="icon fa-file-pdf-o"></a></font></b><br>
                                             &nbsp&nbsp&nbsp&nbsp <font size="3">一种基于自动选择副本因子模型的图计算方法. (ID: 201710533444.5)</font><br>
                                             &nbsp&nbsp&nbsp&nbsp <font size="3"><i>Han Chen, <b>Lingxiao Ma</b>, Zhi Yang, Jilong Xue, Yafei Dai</i></font><br>
                                         </li>
